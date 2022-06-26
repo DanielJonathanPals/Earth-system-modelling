@@ -18,6 +18,9 @@ tr = odeint(lorenz,u0,t,args=(rho,))
 fig = plt.figure()                                      #Plot Trajectory
 ax = plt.axes(projection='3d')
 ax.plot3D(tr[:,0],tr[:,1],tr[:,2])
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_zlabel('z')
 plt.show()
 
 
