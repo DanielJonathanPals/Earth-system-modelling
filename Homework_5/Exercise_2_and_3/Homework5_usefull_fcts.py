@@ -39,7 +39,7 @@ def create_data(rho_list,t,dist=0.1,init_pnt=np.zeros(3),no_rand=[]):
 
     Arguments:
     - rho_list: (np.array) Array containing values of rho for which one wants solutions
-    - t: (np.array) Array ranging from 0 to the final time to which one wants to 
+    - t: (np.array) Array of dimension 1 ranging from 0 to the final time to which one wants to 
         compute the trajectory. This is given as an arguemt to the odeint solver
         of scipy
     - init_pnt: (np.array) Array of size 3 indicating the point close to witch the
