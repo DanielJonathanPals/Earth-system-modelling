@@ -5,7 +5,7 @@ import Exercise3_ab as ex3ab
 import Exercise2_bcd as ex2bcd
 
 a = 3.5699456
-x0 = 1e-5
+x0 = 0.5
 N = 20000
 eps_arr = np.logspace(-1,-0.4,20)
 

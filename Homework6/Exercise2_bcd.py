@@ -2,7 +2,7 @@ from scipy.integrate import odeint
 import numpy as np
 import matplotlib.pyplot as plt
 
-t = np.arange(0,100,0.001)
+t = np.arange(0,2000,0.02)
 u0 = [1,1,1]
 eps_arr = np.logspace(-1,1,20)
 

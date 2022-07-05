@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 a_arr = np.linspace(2.5,4,500)
-x0 = 1e-5
+x0 = 0.5
 
 def traj(x0,a,N=500,**kwargs):
     Tr = 0
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     for i,a in enumerate(a_arr):
         tr = traj(x0,a,Tr=400)
         lyap_arr[i] = np.sum(np.log(np.abs(f_prime(tr,a))))/len(tr)
-        ax[0].scatter(np.ones(len(tr))*a,tr,s=1,color='black')
+        ax[0].scatter(np.ones(len(tr))*a,tr,s=0.01,color='black')
     ax[1].set_xlabel('a')
     ax[1].axhline(0,color='black',ls='--')
     ax[1].set_ylabel(r'$\lambda$')
